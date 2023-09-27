@@ -1,6 +1,6 @@
 <?php
 // FILE 2 - custom-action.php - Custom Action
-class CustomAction extends \\Breakdance\\Forms\\Actions\\Action {
+class CustomAction extends \Breakdance\Forms\Actions\Action {
     
     public function name() {
         return 'My Custom Action';
