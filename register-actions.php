@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Breakdance Form URL Redirect
  * Description: A custom WordPress plugin for checking and redirecting URLs from Breakdance forms.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Dominik Wojtysiak
  * Author URI: https://wojtysiak.one/about/
  */
@@ -15,7 +15,7 @@ add_action('init', function() {
     
     require_once(plugin_dir_path(__FILE__) . 'custom-action.php'); 
     
-    \\Breakdance\\Forms\\Actions\\registerAction(new CustomAction());
+    Breakdance\\Forms\\Actions\\registerAction(new CustomAction());
 });
 
 require 'plugin-update-checker/plugin-update-checker.php';
