@@ -9,13 +9,13 @@
 
 // FILE 1 - register-actions.php - Register Custom Action
 add_action('init', function() { 
-    if (!function_exists('\Breakdance\Forms\Actions\registerAction') || !class_exists('\Breakdance\Forms\Actions\Action')) {
+    if (!function_exists('\\Breakdance\\Forms\\Actions\\registerAction') || !class_exists('\\Breakdance\\Forms\\Actions\\Action')) {
         return;
     }
     
     require_once(plugin_dir_path(__FILE__) . 'custom-action.php'); 
     
-    \Breakdance\Forms\Actions\registerAction(new CustomAction());
+    \\Breakdance\\Forms\\Actions\\registerAction(new CustomAction());
 });
 
 require 'plugin-update-checker/plugin-update-checker.php';
